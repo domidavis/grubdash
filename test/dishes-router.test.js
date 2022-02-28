@@ -38,7 +38,7 @@ describe("dishes router", () => {
     test("returns 400 if name is missing", async () => {
       const response = await request(app)
         .post(ATTACHED_PATH)
-        .set("Accept", "application/json")``
+        .set("Accept", "application/json")
         .send({
           data: { description: "description", image_url: "none", price: 1 },
         });
